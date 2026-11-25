@@ -1,0 +1,23 @@
+; Merge into your project.godot. Autoload ORDER matters -- keep these four first, in this order.
+; Add your own autoloads after them.
+
+[autoload]
+
+NetLog="*res://scripts/autoload/net_log.gd"
+SteamManager="*res://scripts/autoload/steam_manager.gd"
+SteamNetwork="*res://scripts/autoload/steam_network.gd"
+SceneRouter="*res://scripts/autoload/scene_router.gd"
+
+[editor_plugins]
+
+; Optional: the GodotSteam updater plugin. Not needed at runtime.
+enabled=PackedStringArray("res://addons/godotsteam/plugin.cfg")
+
+[logging]
+
+; Every print/push_warning/push_error lands in user://logs/godot.log (rotating). Collect this
+; file from BOTH machines after a multiplayer test.
+file_logging/enable_file_logging=true
+file_logging/enable_file_logging.pc=true
+file_logging/log_path="user://logs/godot.log"
+file_logging/max_log_files=5

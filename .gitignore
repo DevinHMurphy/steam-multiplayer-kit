@@ -1,0 +1,16 @@
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Godot files, in case the kit is opened or test-compiled as a project
+.godot/
+*.import
+*.uid
+export_presets.cfg
+
+# Steam dev App ID stub and the GodotSteam addon belong to the project using the kit, not here
+steam_appid.txt
+addons/
